@@ -8,11 +8,11 @@ class Solution {
         }//comment
         List<Integer>[] bucket = new List[nums.length + 1];
         for (int key : map.keySet()) {
-            int freq = map.get(key);
-            if (bucket[freq] == null) {
-                bucket[freq] = new ArrayList<>();
+            int freqe = map.get(key);
+            if (bucket[freqe] == null) {
+                bucket[freqe] = new ArrayList<>();
             }
-            bucket[freq].add(key);
+            bucket[freqe].add(key);
         }
         int[] result = new int[k];
         int index = 0;
